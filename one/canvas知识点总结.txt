@@ -1,100 +1,100 @@
-canvasÖªÊ¶µã×Ü½á
-×÷Õß£º·­Ô½ÕâÇ½
-¡¡¡¡ÏÖ°ÑcanvasµÄÖªÊ¶µã×Ü½áÈçÏÂ£¬ÒÔ±ãËæÊ±²éÔÄ¡£
+ï»¿canvasçŸ¥è¯†ç‚¹æ€»ç»“
+ä½œè€…ï¼šç¿»è¶Šè¿™å¢™
+ã€€ã€€ç°æŠŠcanvasçš„çŸ¥è¯†ç‚¹æ€»ç»“å¦‚ä¸‹ï¼Œä»¥ä¾¿éšæ—¶æŸ¥é˜…ã€‚
 
-1¡¢Ìî³ä¾ØĞÎ fillRect(x,y,width,height);
-2¡¢»æÖÆ¾ØĞÎ±ß¿ò strokeRect(x,y,width,height);
-3¡¢²Á³ı¾ØĞÎ clearRect(x,y,width,height);
-4¡¢Ìî³äÑùÊ½ fillStyle="red"; ÑùÊ½¿ÉÒÔÎªÑÕÉ«¡¢½¥±äºÍÍ¼Ïñ¡£
-5¡¢Ãè±ßÑùÊ½ strokeStyle="red";
-6¡¢Ãè±ßÏßÌõµÄ¿í¶È lineWidth=4;
-7¡¢ÏßÌõÄ©¶ËĞÎ×´ lineCap="butt"; butt(¶Ô½Ó)/round(Ô²)/square(·½)£¬Ä¬ÈÏÇé¿öÏÂÊÇbutt;
-8¡¢ÏßÌõÏà½»ÑùÊ½ lineJoin="miter"; miter(¼â½Ç)/round(Ô²½Ç)/bevel(Ğ±½Ç),Ä¬ÈÏ¼â½Ç;
-9¡¢¿ªÊ¼»æÖÆÂ·¾¶ beginPath();
-10¡¢½áÊøÂ·¾¶ closePath(); ´´½¨Â·¾¶ºó£¬Èç¹ûÏë»æÖÆÒ»ÌõÁ¬½Óµ½Â·¾¶ÆğµãµÄÏßÌõ£¬¿ÉÒÔµ÷ÓÃclosePath();
-11¡¢»æÖÆÔ²»¡ arc(x,y,radius,startAngle,endAngle,true/false);
-12¡¢»æÖÆ»¡Ïß arcTo(x1,y1,x2,y2,radius) ´ÓÉÏÒ»µã¿ªÊ¼»æÖÆÒ»Ìì»¡Ïß£¬µ½x2,y2ÎªÖ¹£¬²¢ÇÒÒÔ¸ø¶¨µÄ°ë¾¶radius´©¹ıx1,y1;
-13¡¢moveTO(x,y); ½«»æÍ¼ÓÎ±êÒÆ¶¯µ½£¨x,y£©,²»»­Ïß
-14¡¢lineTo(x,y); ´ÓÉÏÒ»µã¿ªÊ¼»æÖÆÒ»ÌõÖ±Ïß
-15¡¢¶ş´Î±´Èû¶ûÇúÏß£º quadraticCurveTo(cx,cy,x,y); ´ÓÉÏÒ»µã¿ªÊ¼»æÖÆ¶ş´ÎÇúÏß£¬µ½x,yÎªÖ¹£¬cx,cy×÷Îª¿ØÖÆµã¡£
-16¡¢Èı´Î±´Èû¶ûÇúÏß£º bezierCurveTo(cx1,cy1,cx2,cy2,x,y); ´ÓÉÏÒ»µã¿ªÊ¼»æÖÆ¶ş´ÎÇúÏß£¬µ½x,yÎªÖ¹£¬cx1,cy1ºÍcx2,cy2×÷Îª¿ØÖÆµã¡£
-17¡¢rect(x,y,width,height);´Óµãx,y¿ªÊ¼»æÖÆ¾ØĞÎ£¬¿í¶ÈºÍ¸ß¶È·Ö±ğÓÉwidthºÍheightÖ¸¶¨¡£Õâ¸ö·½·¨»æÖÆµÄÊÇ¾ØĞÎÂ·¾¶£¬¶ø²»ÊÇ¶ÀÁ¢ĞÎ×´¡£
-18¡¢»æÖÆÎÄ±¾£º
-¡¡¡¡(1) Ìî³äÎÄ±¾£ºfillText("hello",x,y,width);widthÎª¿ÉÑ¡µÄ×î´óÏñËØ¿í¶È,Èç¹ûÎÄ±¾´óÓÚ×î´ó¿í¶È£¬ÔòÎÄ±¾»áÊÕËõÒÔÊÊÓ¦×î´ó¿í¶È¡£
-¡¡¡¡(2) ÎÄ±¾Ãè±ß£ºstrokeText("hello",x,y,width);widthÎª¿ÉÑ¡µÄ×î´óÏñËØ¿í¶È¡£
-¡¡¡¡(3) ÎÄ±¾ÑùÊ½£ºfont="bold 14px Arial";
-¡¡¡¡(4) Ë®Æ½ÎÄ±¾¶ÔÆë£ºtextAlign='start';// start, end, left,right, center¡£Ä¬ÈÏÖµ:start¡£ÒÔÎÄ×ÖµÄÆğÊ¼µã(x,y)Îª»ùµãµÄ×İÖá½øĞĞ¶ÔÆë¡£
-¡¡¡¡(5) ´¹Ö±ÎÄ±¾¶ÔÆë£ºtextBaseline='alphabetic';//top, hanging, middle,alphabetic, ideographic, bottom¡£Ä¬ÈÏÖµ£ºalphabetic¡£ÒÔÎÄ×ÖµÄÆğÊ¼µã(x,y)Îª»ùµãµÄºáÖá½øĞĞ¶ÔÆë¡£
-¡¡¡¡(6) ÎÄ±¾µÄ¿í¶È£ºvar text="hello"; var length=context.measureText(text)£»²ÎÊıtextÎªËùĞèÒª»æÖÆµÄÎÄ×Ö
-19¡¢±ä»»
-¡¡¡¡(1) rotate(angle):Î§ÈÆÔ­µãĞı×ªÍ¼Ïñangle»¡¶È¡£
-Ò²¿ÉÒÔÊ¹ÓÃtransform(Math.cos(angle*Math.PI/180),Math.sin(angle*Math.PI/180),-Math.sin(angle*Math.PI/180),Math.cos(angle*Math.PI/180),0,0);
-¡¡¡¡(2) scale(x,y):Ëõ·ÅÍ¼Ïñ¡£Ò²¿ÉÒÔÊ¹ÓÃtransform(x,0,0,y,0,0);
-¡¡¡¡(3) translate(x,y):½«×ø±êÔ­µãÒÆ¶¯µ½x,y£¬Ö´ĞĞÕâ¸ö±ä»»Ö®ºó£¬×ø±ê0,0»á±ä³ÉÖ®Ç°ÓÉx,y±íÊ¾µÄµã¡£Ò²¿ÉÒÔÊ¹ÓÃtransform(1,0,0,1,x,y);
-¡¡¡¡(4) transform(<number>, <number>, <number>,<number>,x, y);
-¡¡¡¡(5) setTransform(<number>, <number>, <number>,<number>,x, y);½«±ä»»¾ØÕóÖØÖÃÎªÄ¬ÈÏ×´Ì¬£¬È»ºóÔÙµ÷ÓÃtransform();
-20¡¢Í¼ĞÎ×éºÏ
+1ã€å¡«å……çŸ©å½¢ fillRect(x,y,width,height);
+2ã€ç»˜åˆ¶çŸ©å½¢è¾¹æ¡† strokeRect(x,y,width,height);
+3ã€æ“¦é™¤çŸ©å½¢ clearRect(x,y,width,height);
+4ã€å¡«å……æ ·å¼ fillStyle="red"; æ ·å¼å¯ä»¥ä¸ºé¢œè‰²ã€æ¸å˜å’Œå›¾åƒã€‚
+5ã€æè¾¹æ ·å¼ strokeStyle="red";
+6ã€æè¾¹çº¿æ¡çš„å®½åº¦ lineWidth=4;
+7ã€çº¿æ¡æœ«ç«¯å½¢çŠ¶ lineCap="butt"; butt(å¯¹æ¥)/round(åœ†)/square(æ–¹)ï¼Œé»˜è®¤æƒ…å†µä¸‹æ˜¯butt;
+8ã€çº¿æ¡ç›¸äº¤æ ·å¼ lineJoin="miter"; miter(å°–è§’)/round(åœ†è§’)/bevel(æ–œè§’),é»˜è®¤å°–è§’;
+9ã€å¼€å§‹ç»˜åˆ¶è·¯å¾„ beginPath();
+10ã€ç»“æŸè·¯å¾„ closePath(); åˆ›å»ºè·¯å¾„åï¼Œå¦‚æœæƒ³ç»˜åˆ¶ä¸€æ¡è¿æ¥åˆ°è·¯å¾„èµ·ç‚¹çš„çº¿æ¡ï¼Œå¯ä»¥è°ƒç”¨closePath();
+11ã€ç»˜åˆ¶åœ†å¼§ arc(x,y,radius,startAngle,endAngle,true/false);
+12ã€ç»˜åˆ¶å¼§çº¿ arcTo(x1,y1,x2,y2,radius) ä»ä¸Šä¸€ç‚¹å¼€å§‹ç»˜åˆ¶ä¸€å¤©å¼§çº¿ï¼Œåˆ°x2,y2ä¸ºæ­¢ï¼Œå¹¶ä¸”ä»¥ç»™å®šçš„åŠå¾„radiusç©¿è¿‡x1,y1;
+13ã€moveTO(x,y); å°†ç»˜å›¾æ¸¸æ ‡ç§»åŠ¨åˆ°ï¼ˆx,yï¼‰,ä¸ç”»çº¿
+14ã€lineTo(x,y); ä»ä¸Šä¸€ç‚¹å¼€å§‹ç»˜åˆ¶ä¸€æ¡ç›´çº¿
+15ã€äºŒæ¬¡è´å¡å°”æ›²çº¿ï¼š quadraticCurveTo(cx,cy,x,y); ä»ä¸Šä¸€ç‚¹å¼€å§‹ç»˜åˆ¶äºŒæ¬¡æ›²çº¿ï¼Œåˆ°x,yä¸ºæ­¢ï¼Œcx,cyä½œä¸ºæ§åˆ¶ç‚¹ã€‚
+16ã€ä¸‰æ¬¡è´å¡å°”æ›²çº¿ï¼š bezierCurveTo(cx1,cy1,cx2,cy2,x,y); ä»ä¸Šä¸€ç‚¹å¼€å§‹ç»˜åˆ¶äºŒæ¬¡æ›²çº¿ï¼Œåˆ°x,yä¸ºæ­¢ï¼Œcx1,cy1å’Œcx2,cy2ä½œä¸ºæ§åˆ¶ç‚¹ã€‚
+17ã€rect(x,y,width,height);ä»ç‚¹x,yå¼€å§‹ç»˜åˆ¶çŸ©å½¢ï¼Œå®½åº¦å’Œé«˜åº¦åˆ†åˆ«ç”±widthå’ŒheightæŒ‡å®šã€‚è¿™ä¸ªæ–¹æ³•ç»˜åˆ¶çš„æ˜¯çŸ©å½¢è·¯å¾„ï¼Œè€Œä¸æ˜¯ç‹¬ç«‹å½¢çŠ¶ã€‚
+18ã€ç»˜åˆ¶æ–‡æœ¬ï¼š
+ã€€ã€€(1) å¡«å……æ–‡æœ¬ï¼šfillText("hello",x,y,width);widthä¸ºå¯é€‰çš„æœ€å¤§åƒç´ å®½åº¦,å¦‚æœæ–‡æœ¬å¤§äºæœ€å¤§å®½åº¦ï¼Œåˆ™æ–‡æœ¬ä¼šæ”¶ç¼©ä»¥é€‚åº”æœ€å¤§å®½åº¦ã€‚
+ã€€ã€€(2) æ–‡æœ¬æè¾¹ï¼šstrokeText("hello",x,y,width);widthä¸ºå¯é€‰çš„æœ€å¤§åƒç´ å®½åº¦ã€‚
+ã€€ã€€(3) æ–‡æœ¬æ ·å¼ï¼šfont="bold 14px Arial";
+ã€€ã€€(4) æ°´å¹³æ–‡æœ¬å¯¹é½ï¼štextAlign='start';// start, end, left,right, centerã€‚é»˜è®¤å€¼:startã€‚ä»¥æ–‡å­—çš„èµ·å§‹ç‚¹(x,y)ä¸ºåŸºç‚¹çš„çºµè½´è¿›è¡Œå¯¹é½ã€‚
+ã€€ã€€(5) å‚ç›´æ–‡æœ¬å¯¹é½ï¼štextBaseline='alphabetic';//top, hanging, middle,alphabetic, ideographic, bottomã€‚é»˜è®¤å€¼ï¼šalphabeticã€‚ä»¥æ–‡å­—çš„èµ·å§‹ç‚¹(x,y)ä¸ºåŸºç‚¹çš„æ¨ªè½´è¿›è¡Œå¯¹é½ã€‚
+ã€€ã€€(6) æ–‡æœ¬çš„å®½åº¦ï¼švar text="hello"; var length=context.measureText(text)ï¼›å‚æ•°textä¸ºæ‰€éœ€è¦ç»˜åˆ¶çš„æ–‡å­—
+19ã€å˜æ¢
+ã€€ã€€(1) rotate(angle):å›´ç»•åŸç‚¹æ—‹è½¬å›¾åƒangleå¼§åº¦ã€‚
+ä¹Ÿå¯ä»¥ä½¿ç”¨transform(Math.cos(angle*Math.PI/180),Math.sin(angle*Math.PI/180),-Math.sin(angle*Math.PI/180),Math.cos(angle*Math.PI/180),0,0);
+ã€€ã€€(2) scale(x,y):ç¼©æ”¾å›¾åƒã€‚ä¹Ÿå¯ä»¥ä½¿ç”¨transform(x,0,0,y,0,0);
+ã€€ã€€(3) translate(x,y):å°†åæ ‡åŸç‚¹ç§»åŠ¨åˆ°x,yï¼Œæ‰§è¡Œè¿™ä¸ªå˜æ¢ä¹‹åï¼Œåæ ‡0,0ä¼šå˜æˆä¹‹å‰ç”±x,yè¡¨ç¤ºçš„ç‚¹ã€‚ä¹Ÿå¯ä»¥ä½¿ç”¨transform(1,0,0,1,x,y);
+ã€€ã€€(4) transform(<number>, <number>, <number>,<number>,x, y);
+ã€€ã€€(5) setTransform(<number>, <number>, <number>,<number>,x, y);å°†å˜æ¢çŸ©é˜µé‡ç½®ä¸ºé»˜è®¤çŠ¶æ€ï¼Œç„¶åå†è°ƒç”¨transform();
+20ã€å›¾å½¢ç»„åˆ
 context.fillStyle="blue";
 context.fillRect(10,10,100,100);
-context.globalCompositeOperation='lighter';  ¿ÉÑ¡ÖµÈç/* */ÄÚ¡£
+context.globalCompositeOperation='lighter';  å¯é€‰å€¼å¦‚/* */å†…ã€‚
 context.fillStyle="red";
 context.arc(110,60,50,0,Math.PI*2,false);
 context.fill();
 /*
-source-over(Ä¬ÈÏÖµ)£º
-destination-over£ºÔÚÔ­ÓĞÍ¼ĞÎÖ®ÏÂ»æÖÆĞÂÍ¼ĞÎ
-source-in£ºĞÂÍ¼ĞÎÓëÔ­ÓĞÍ¼ĞÎ×÷inÔËËã£¬Ö»ÏÔÊ¾ĞÂÍ¼ĞÎÖĞÓëÔ­ÓĞÍ¼ĞÎÏàÖØµşµÄ²¿·Ö
-destination-in£ºÔ­ÓĞÍ¼ĞÎÓëĞÂÍ¼ĞÎ×÷inÔËËã£¬Ö»ÏÔÊ¾ĞÂÍ¼ĞÎÖĞÓëÔ­ÓĞÍ¼ĞÎÏàÖØµşµÄ²¿·Ö
-source-out£ºĞÂÍ¼ĞÎÓëÔ­ÓĞÍ¼ĞÎ×÷outÔËËã£¬Ö»ÏÔÊ¾ĞÂÍ¼ĞÎÖĞÓëÔ­ÓĞÍ¼ĞÎ²»ÖØµşµÄ²¿·Ö
-destination-out£ºĞÂÍ¼ĞÎÓëÔ­ÓĞÍ¼ĞÎ×÷outÔËËã£¬Ö»ÏÔÊ¾ĞÂÍ¼ĞÎÖĞÓëÔ­ÓĞÍ¼ĞÎ²»ÖØµşµÄ²¿·Ö
-source-atop£ºÖ»»æÖÆĞÂÍ¼ĞÎÖĞÓëÔ­ÓĞÍ¼ĞÎÖØµşµÄ²¿·ÖºÍÎ´±»ÖØµşµÄÔ­ÓĞÍ¼ĞÎ
-destination-atop£ºÖ»»æÖÆÔ­ÓĞÍ¼ĞÎÖĞ±»ĞÂÍ¼ĞÎÖØµşµÄ²¿·ÖºÍĞÂÍ¼ĞÎµÄÆäËû²¿·Ö
-lighter£ºÔ­ÓĞÍ¼ĞÎÓëĞÂÍ¼ĞÎ¾ù»æÖÆ£¬ÖØµş²¿·Ö×ö¼ÓÉ«´¦Àí
-xor£ºÖ»»æÖÆĞÂÍ¼ĞÎÓëÔ­ÓĞÍ¼ĞÎ²»ÖØµşµÄ²¿·Ö£¬ÖØµş²¿·Ö±äÍ¸Ã÷
-copy£ºÖ»»æÖÆĞÂÍ¼ĞÎ
+source-over(é»˜è®¤å€¼)ï¼š
+destination-overï¼šåœ¨åŸæœ‰å›¾å½¢ä¹‹ä¸‹ç»˜åˆ¶æ–°å›¾å½¢
+source-inï¼šæ–°å›¾å½¢ä¸åŸæœ‰å›¾å½¢ä½œinè¿ç®—ï¼Œåªæ˜¾ç¤ºæ–°å›¾å½¢ä¸­ä¸åŸæœ‰å›¾å½¢ç›¸é‡å çš„éƒ¨åˆ†
+destination-inï¼šåŸæœ‰å›¾å½¢ä¸æ–°å›¾å½¢ä½œinè¿ç®—ï¼Œåªæ˜¾ç¤ºæ–°å›¾å½¢ä¸­ä¸åŸæœ‰å›¾å½¢ç›¸é‡å çš„éƒ¨åˆ†
+source-outï¼šæ–°å›¾å½¢ä¸åŸæœ‰å›¾å½¢ä½œoutè¿ç®—ï¼Œåªæ˜¾ç¤ºæ–°å›¾å½¢ä¸­ä¸åŸæœ‰å›¾å½¢ä¸é‡å çš„éƒ¨åˆ†
+destination-outï¼šæ–°å›¾å½¢ä¸åŸæœ‰å›¾å½¢ä½œoutè¿ç®—ï¼Œåªæ˜¾ç¤ºæ–°å›¾å½¢ä¸­ä¸åŸæœ‰å›¾å½¢ä¸é‡å çš„éƒ¨åˆ†
+source-atopï¼šåªç»˜åˆ¶æ–°å›¾å½¢ä¸­ä¸åŸæœ‰å›¾å½¢é‡å çš„éƒ¨åˆ†å’Œæœªè¢«é‡å çš„åŸæœ‰å›¾å½¢
+destination-atopï¼šåªç»˜åˆ¶åŸæœ‰å›¾å½¢ä¸­è¢«æ–°å›¾å½¢é‡å çš„éƒ¨åˆ†å’Œæ–°å›¾å½¢çš„å…¶ä»–éƒ¨åˆ†
+lighterï¼šåŸæœ‰å›¾å½¢ä¸æ–°å›¾å½¢å‡ç»˜åˆ¶ï¼Œé‡å éƒ¨åˆ†åšåŠ è‰²å¤„ç†
+xorï¼šåªç»˜åˆ¶æ–°å›¾å½¢ä¸åŸæœ‰å›¾å½¢ä¸é‡å çš„éƒ¨åˆ†ï¼Œé‡å éƒ¨åˆ†å˜é€æ˜
+copyï¼šåªç»˜åˆ¶æ–°å›¾å½¢
 */
-21¡¢»æÖÆÍ¼ĞÎÒõÓ°
-context.shadowOffsetX=10;//ÒõÓ°µÄºáÏòÎ»ÒÆÁ¿
-context.shadowOffsetY=10;//ÒõÓ°µÄ×İÏòÎ»ÒÆÁ¿
-context.shadowColor='rgba(100,100,100,0.5)';//ÒõÓ°µÄÑÕÉ«
-context.shadowBlur=7; //ÒõÓ°µÄÄ£ºı·¶Î§
+21ã€ç»˜åˆ¶å›¾å½¢é˜´å½±
+context.shadowOffsetX=10;//é˜´å½±çš„æ¨ªå‘ä½ç§»é‡
+context.shadowOffsetY=10;//é˜´å½±çš„çºµå‘ä½ç§»é‡
+context.shadowColor='rgba(100,100,100,0.5)';//é˜´å½±çš„é¢œè‰²
+context.shadowBlur=7; //é˜´å½±çš„æ¨¡ç³ŠèŒƒå›´
 
-22¡¢»æÖÆ¡¢Æ½ÆÌ¡¢²Ã¼ôÍ¼Ïñ
+22ã€ç»˜åˆ¶ã€å¹³é“ºã€è£å‰ªå›¾åƒ
 context.drawImage(image,x,y);
 context.drawImage(image,x,y,w,h);
-context.drawImage(image,sx,sy,sw,sh,dx,dy,dw,dh);sx,syºÍsw,shÎªÔ´Í¼ÏñµÄ±»¸´ÖÆÇøÓòµÄÆğÊ¼×ø±êºÍ¸ß¶È£¬dx,dyºÍdw,dhÎª¸´ÖÆºóµÄÇøÓòµÄÄ¿±ê×ø±êºÍ¸ß¶È¡£
-context.createPattern(image,type);Í¼ÏñÆ½ÆÌ£¬²ÎÊı¿ÉÒÔÎª£ºno-repeat,repeat-x,repeat-y,repeat;
-context.clip();//²Ã¼ô¹¦ÄÜ
+context.drawImage(image,sx,sy,sw,sh,dx,dy,dw,dh);sx,syå’Œsw,shä¸ºæºå›¾åƒçš„è¢«å¤åˆ¶åŒºåŸŸçš„èµ·å§‹åæ ‡å’Œé«˜åº¦ï¼Œdx,dyå’Œdw,dhä¸ºå¤åˆ¶åçš„åŒºåŸŸçš„ç›®æ ‡åæ ‡å’Œé«˜åº¦ã€‚
+context.createPattern(image,type);å›¾åƒå¹³é“ºï¼Œå‚æ•°å¯ä»¥ä¸ºï¼šno-repeat,repeat-x,repeat-y,repeat;
+context.clip();//è£å‰ªåŠŸèƒ½
 
-Àı×Ó£º
-image=new Image();//´´½¨Image¶ÔÏó
+ä¾‹å­ï¼š
+image=new Image();//åˆ›å»ºImageå¯¹è±¡
 image.src="../images/wukong.gif";
-var test=context.createPattern(image,'repeat-y');//createPatternÉèÖÃÆ½ÆÌĞ§¹û£¬
+var test=context.createPattern(image,'repeat-y');//createPatternè®¾ç½®å¹³é“ºæ•ˆæœï¼Œ
 context.fillStyle=test;
 context.fillRect(0,0,400,400);
 
-image.onload=function() { //´Ë·½·¨µÄ×÷ÓÃÊÇ£¬Èç¹ûÍ¼Æ¬ÊÇ±È½Ï´óµÄÍøÂçÍ¼ÏñÎÄ¼ş£¬·ÀÖ¹Í¼ÏñÈ«²¿×°ÔØÍê±Ï²Å¿´¼û¸ÃÍ¼Ïñ£¬ÕâÑù¾Í¿ÉÒÔÒ»±ß×°ÔØÒ»±ß»æÖÆÁË¡£
+image.onload=function() { //æ­¤æ–¹æ³•çš„ä½œç”¨æ˜¯ï¼Œå¦‚æœå›¾ç‰‡æ˜¯æ¯”è¾ƒå¤§çš„ç½‘ç»œå›¾åƒæ–‡ä»¶ï¼Œé˜²æ­¢å›¾åƒå…¨éƒ¨è£…è½½å®Œæ¯•æ‰çœ‹è§è¯¥å›¾åƒï¼Œè¿™æ ·å°±å¯ä»¥ä¸€è¾¹è£…è½½ä¸€è¾¹ç»˜åˆ¶äº†ã€‚
 drawImg(context,image);
 }
 function drawImg(context,image){
-//»æÖÆÔ­Ê¼Í¼Ïñ
+//ç»˜åˆ¶åŸå§‹å›¾åƒ
 context.drawImage(image,10,10,125,125);
-//¾Ö²¿·Å´ó
+//å±€éƒ¨æ”¾å¤§
 context.drawImage(image,20,0,90,100,150,10,125,125);
 
 context.rect(20,20,80,80);
 context.clip();
 context.drawImage(image,0,0,200,200);
 }
-23¡¢±£´æ¡¢»Ö¸´
-contex.save();½«µ±Ç°×´Ì¬±£´æµ½Õ»ÖĞ¡£×¢Òâ£º±£´æµÄÖ»ÊÇ¶Ô»æÖÆÍ¼ĞÎµÄÉèÖÃºÍ±ä»»£¬²»»á±£´æ»æÖÆÍ¼ĞÎµÄÄÚÈİ¡£
-context.restore();´ÓÕ»ÖĞÈ¡³öÖ®Ç°±£´æµÄÍ¼ĞÎ×´Ì¬
-¿ÉÒÔÓ¦ÓÃµÄ³¡ºÏ£º
-(1)Í¼Ïñ»òÍ¼ĞÎ±äĞÎ
-(2)Í¼Ïñ²Ã¼ô
-(3)¸Ä±äÍ¼ĞÎÉÏÏÂÎÄÊ±ÊôĞÔÊ±£ºfillStyle,font,globalAlpha,globalComposite-Operation,lineCap,lineJoin,lineWidth,miterLimit,shadowBlur,shadowColor,
+23ã€ä¿å­˜ã€æ¢å¤
+contex.save();å°†å½“å‰çŠ¶æ€ä¿å­˜åˆ°æ ˆä¸­ã€‚æ³¨æ„ï¼šä¿å­˜çš„åªæ˜¯å¯¹ç»˜åˆ¶å›¾å½¢çš„è®¾ç½®å’Œå˜æ¢ï¼Œä¸ä¼šä¿å­˜ç»˜åˆ¶å›¾å½¢çš„å†…å®¹ã€‚
+context.restore();ä»æ ˆä¸­å–å‡ºä¹‹å‰ä¿å­˜çš„å›¾å½¢çŠ¶æ€
+å¯ä»¥åº”ç”¨çš„åœºåˆï¼š
+(1)å›¾åƒæˆ–å›¾å½¢å˜å½¢
+(2)å›¾åƒè£å‰ª
+(3)æ”¹å˜å›¾å½¢ä¸Šä¸‹æ–‡æ—¶å±æ€§æ—¶ï¼šfillStyle,font,globalAlpha,globalComposite-Operation,lineCap,lineJoin,lineWidth,miterLimit,shadowBlur,shadowColor,
 shadowOffsetX,shadowOffsetY,strokeStyle,textAlign,textBaseline
-24¡¢ÏßĞÔ½¥±ä
+24ã€çº¿æ€§æ¸å˜
 var g=context.createLinearGradient(xStart,yStart,xEnd,yEnd);
 var g1=context.createRadialGradient(xStart,yStrat,radiusStrat,xEnd,yEnd,radiusEnd);
 g.addColorStop(0,'red');
