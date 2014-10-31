@@ -1,5 +1,5 @@
 ﻿canvas知识点总结
-作者：翻越这墙  1
+作者：翻越这墙
 　　现把canvas的知识点总结如下，以便随时查阅。
 
 1、填充矩形 fillRect(x,y,width,height);
